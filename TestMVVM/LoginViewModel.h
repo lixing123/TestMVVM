@@ -7,7 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface LoginViewModel : NSObject
+
+//viewController->viewModel
+@property(nonatomic)NSString *phoneNumber;
+@property(nonatomic)NSString *password;
+
+//viewModel->viewController
+@property(nonatomic)
+
+//action
+@property(nonatomic)RACCommand *loginCommand;
+@property(nonatomic)RACCommand *registerCommand;
+@property(nonatomic)RACCommand *forgetPasswordCommand;
 
 @end
