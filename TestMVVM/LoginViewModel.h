@@ -16,7 +16,7 @@
 @property(nonatomic)NSString *password;
 
 //viewModel->viewController
-@property(nonatomic)
+@property(nonatomic)NSString *loginResultString;
 
 //action
 @property(nonatomic)RACCommand *loginCommand;

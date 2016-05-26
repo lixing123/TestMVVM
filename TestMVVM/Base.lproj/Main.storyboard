@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -178,6 +179,9 @@
                                         <include reference="zR8-3h-RLa"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DDW-Tk-eD2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cu-ds-6uJ">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -208,13 +212,11 @@
                                 <variation key="widthClass=compact" constant="-1"/>
                             </constraint>
                             <constraint firstItem="0cu-ds-6uJ" firstAttribute="centerX" secondItem="JIu-Tg-2PC" secondAttribute="centerX" id="ZgW-tp-AN1"/>
-                            <constraint firstItem="ole-WZ-TVr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="cVO-Yk-XT9">
-                                <variation key="widthClass=compact" constant="16"/>
-                            </constraint>
                             <constraint firstItem="JIu-Tg-2PC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="eol-u1-GAp"/>
                             <constraint firstItem="dxR-2N-Rht" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fNB-JJ-8KW"/>
                             <constraint firstAttribute="trailing" secondItem="dxR-2N-Rht" secondAttribute="trailing" id="fzS-QY-i0L"/>
                             <constraint firstItem="ole-WZ-TVr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jtL-cF-krj"/>
+                            <constraint firstItem="ole-WZ-TVr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="kNe-th-vEe"/>
                             <constraint firstItem="0cu-ds-6uJ" firstAttribute="height" secondItem="JIu-Tg-2PC" secondAttribute="height" id="pQU-xF-rP7"/>
                             <constraint firstItem="3Bq-al-QPC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u7L-Y1-vnq"/>
                         </constraints>
@@ -231,7 +233,6 @@
                                 <exclude reference="HlW-nH-UFb"/>
                                 <exclude reference="fNB-JJ-8KW"/>
                                 <exclude reference="fzS-QY-i0L"/>
-                                <exclude reference="cVO-Yk-XT9"/>
                                 <exclude reference="jtL-cF-krj"/>
                                 <exclude reference="V4x-Jz-Cv9"/>
                                 <exclude reference="u7L-Y1-vnq"/>
@@ -257,7 +258,6 @@
                                 <include reference="HlW-nH-UFb"/>
                                 <include reference="fNB-JJ-8KW"/>
                                 <include reference="fzS-QY-i0L"/>
-                                <include reference="cVO-Yk-XT9"/>
                                 <include reference="jtL-cF-krj"/>
                                 <include reference="V4x-Jz-Cv9"/>
                                 <include reference="u7L-Y1-vnq"/>
@@ -271,13 +271,6 @@
                             </mask>
                         </variation>
                     </view>
-                    <connections>
-                        <outlet property="forgetPasswordButton" destination="3Bq-al-QPC" id="bRN-Re-Yl4"/>
-                        <outlet property="loginButton" destination="JIu-Tg-2PC" id="FSA-co-kRY"/>
-                        <outlet property="passwordTextField" destination="xcg-Y0-zqq" id="ZP5-30-UEc"/>
-                        <outlet property="phoneTextField" destination="7zF-c7-bvK" id="Ibj-fU-XvC"/>
-                        <outlet property="registerButton" destination="0cu-ds-6uJ" id="ja7-E1-VmA"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
